@@ -5,7 +5,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 # --- SETTINGS ---
 # PASTE YOUR DEEPSEEK API KEY HERE
-API_KEY = "sk-0f1e24bfacd24d67a2f8793e7a197f56" 
+API_KEY = os.getenv("DEEPSEEK_API_KEY") 
 
 client = OpenAI(api_key=API_KEY, base_url="https://api.deepseek.com")
 
